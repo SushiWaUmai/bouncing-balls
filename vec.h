@@ -1,6 +1,8 @@
 #ifndef VEC_H_
 #define VEC_H_
 
+#include <math.h>
+
 typedef struct {
   float x;
   float y;
@@ -52,8 +54,20 @@ vf vf_div(vf v1, vf v2) {
   };
 }
 
-float vf_magsqr(vf v) {
+float vf_sqrmag(vf v) {
   return v.x * v.x + v.y * v.y;
+}
+
+float vf_mag(vf v) {
+  return sqrt(v.x * v.x + v.y * v.y);
+}
+
+float vf_dist(vf v1, vf v2) {
+  return vf_mag(vf_sub(v1, v2));
+}
+
+float vf_sqrdist(vf v1, vf v2) {
+  return vf_sqrmag(vf_sub(v1, v2));
 }
 
 #endif // VEC_H_

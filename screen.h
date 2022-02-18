@@ -48,7 +48,7 @@ void draw_circle(vf c, float r, bool* buffer, int width, int height) {
 
       if(x >= 0 && x < width && y >= 0 && y < height) {
         // if the current "pixel" is in the range of the circle
-        if(vf_magsqr(d) < r*r) {
+        if(vf_sqrmag(d) < r*r) {
           buffer[y * width + x] = true;
         }
       }

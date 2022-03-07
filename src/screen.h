@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <assert.h>
-#include "vec.h"
+#include "./vec.h"
 
 char *table = "._^C";
 

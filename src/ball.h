@@ -1,8 +1,8 @@
 #ifndef BALL_H_
 #define BALL_H_
 
-#include "physics.h"
-#include "screen.h"
+#include "./physics.h"
+#include "./screen.h"
 
 typedef struct {
   physics_body body;

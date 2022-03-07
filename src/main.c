@@ -4,12 +4,12 @@
 #include <stdbool.h>
 #include <string.h>
 #include <unistd.h>
-#include "vec.h"
-#include "screen.h"
-#include "physics.h"
-#include "ball.h"
+#include "./vec.h"
+#include "./screen.h"
+#include "./physics.h"
+#include "./ball.h"
 
-#define WIDTH	128
+#define WIDTH 128
 #define HEIGHT 64
 #define FPS 60
 #define DT (1.0f / FPS)
